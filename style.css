@@ -1,0 +1,79 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito&display=swap");
+
+:root {
+  font-size: 16px;
+  --bg-color: #232424;
+  --text-color: #eee;
+}
+
+.light {
+  --text-color: rgb(48, 39, 39);
+  --bg-color: #dbe1e8;
+  --nav-bgcolor: #b6d7fd;
+}
+
+.dark {
+  --text-color: rgb(13, 219, 75);
+  --bg-color: #12181b;
+  --nav-bgcolor: rgb(9, 73, 28);;
+}
+
+.solar {
+  --text-color: #bc6c25;
+  --bg-color: #fefae0;
+  --nav-bgcolor: #4e2c0f;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Nunito", sans-serif;
+  color: var(--text-color);
+  background-color: var(--bg-color);
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 10vh;
+  padding: 0 2rem;
+  background-color: var(--nav-bgcolor);
+}
+
+nav > ul {
+  display: flex;
+  list-style: none;
+}
+
+nav > ul li {
+  margin-left: 2rem;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+.btn {
+  height: 2rem;
+  width: 2rem;
+  border-radius: 50%;
+  background-color: var(--bgcolor);
+  margin-right: 0.5rem;
+}
+
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50vh;
+  width: 100%;
+}
+
+section {
+  padding: 4rem;
+}
+
+section h1 {
+  margin-bottom: 1rem;
+}
